@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+for ((g=1; g<=51; g++)) do
+	echo "$g"
+done

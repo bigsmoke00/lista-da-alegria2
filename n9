@@ -1,0 +1,18 @@
+#!/bin/bash
+
+for ((g=1;g<=101;g++))
+do
+	random=$(( $RANDOM % 1000 ))
+	echo $random
+	echo $random >> aleatorios.txt
+done
+wc -l aleatorios.txt
+
+soma=0
+for i in $( cat aleatorios.txt )
+do
+	soma=$(( $soma+$g ))
+done
+
+echo "soma: $soma"
+

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+g=""
+for x in $(seq $1 $2)
+do
+	g=$(( x % 2 ))
+	(( ${g} == 0 )) && echo ${x}
+done

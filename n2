@@ -1,0 +1,30 @@
+#!/bin/bash
+
+maior_linhas=0
+
+maior=0
+
+#criando arquivo
+touch arquivo_linhas.txt
+
+for ((c = 0;c < 4;c++)) do
+ 	read -p "Digite o nome do $(( c + 1 ))° arquivo: " digitado
+
+	wc -l $qualquer_coisa > linhas_arquivo.txt
+
+	linhas_arquivo=`cut -d' ' -f1 linhas_arquivo.txt`
+
+	if [$linhas_arquivo -gt $maior_linhas]
+
+	then
+		maior_linhas=$linhas_arquivo
+		maior=$qualquer_coisa
+
+	fi
+done
+
+echo "Arquivo com o maior número de linhas: $maior"
+
+echo ""
+
+echo "Com A eu escrevo AMOR, com P eu escrevo PAIXÃO, com T eu escrevo THIAGO mora no meu CORAÇÃO S2"
